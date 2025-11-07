@@ -1,0 +1,138 @@
+<HTML>
+    <head>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+    <body>
+        <header class="top-bar">
+            <div class="flex">
+                <div class="profile-icon"></div>
+                <p>OWEN SAYENGA</p>
+            </div>
+            <div class="bar-links">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">PROJECTS</a>
+                <a href="#">CONTACT</a>
+            </div>
+        </header>
+        <header class="greeting">
+            <div class="flex colum">
+                <div class="opening">
+                    <h1>HEY, MY NAME IS OWEN <br> SAYENGA</h1>
+                </div>
+                <div class="desc"><p><br><br><br></p></div>
+                <button class="project-button">PROJECTS</button>
+            </div>
+            <div class="mouse1"></div>
+            <div class="socials"></div>
+        </header>
+        <article class="body-section flex colum">
+            <div class="about-me flex colum">
+                <h1 class="line">ABOUT ME</h1>
+                <p class="para-about-me">I have prior work expierence in the food industry in a manager position. While I am now in college.</p>
+            </div>
+            <div class="under-about-me">
+                <div class="get-know">
+                    <div class="container">
+                        <h2>Get to know me!</h2>
+                        <p>Hey! It's Owen Sayenga and I'm a CSET student at Thaddeus Stevens located in Pennsylvania. I am 20 years old and in my first year at Thaddeus.</p>
+                    </div>
+                </div>
+                <div class="my-skills">
+                    <h2>My Skills</h2>
+                    <div class="skill-list">
+                        <div class="skill-box">HTML</div>
+                        <div class="skill-box">CSS</div>
+                        <div class="skill-box">JavaScript</div>
+                        <div class="skill-box">Python</div>
+                        <div class="skill-box">Team Work</div>
+                        <div class="skill-box">Leadership</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="projects">
+            <h1 class="line">PROJECTS</h1>
+            <p>Various Projects I have completed</p>
+            <div class="flex colum">
+                <img src="./assets/jpeg/project-mockup-example.jpeg" class="project-img">
+                <div class="project-desc">
+                    <p>Matrix Calculator: </p>
+                    <div class="test">
+                        <div class="box-wrapper">
+                            <div class="box"></div>
+                        </div>
+                        <button class="viewButton">VIEW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex colum">
+                <img src="./assets/jpeg/project-mockup-example.jpeg" class="project-img">
+                <div class="project-desc">
+                    <p>Omnistore Webpage: </p>
+                    <div class="test">
+                        <div class="box-wrapper">
+                            <div class="box2"></div>
+                        </div>
+                        <button class="viewButton">VIEW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex colum">
+                <img src="./assets/jpeg/project-mockup-example.jpeg" class="project-img">
+                <div class="project-desc">
+                    <p>Triangle Classes: </p>
+                    <div class="test">
+                        <div class="box-wrapper">
+                            <div class="box3"></div>
+                        </div>
+                        <button class="viewButton">VIEW</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="contact-page">
+            <h1 class="line2">CONTACT</h1>
+            <p>Just enter your name, email, and message, and I will get back to you at my earliest conviencence.</p>
+            <div class="contact-form">
+                <div class="title-box">
+                    <p>Name</p>
+                    <input type="name" placeholder="Your Name">
+                </div>
+                <div class="title-box">
+                    <p>Email</p>
+                    <input type="email" placeholder="Your Email">
+                </div>
+                <div class="title-box">
+                    <p>Message</p>
+                    <input type="message" placeholder="Your Message">
+                </div>
+            </div>
+            <button class="submit-button">SUBMIT</button>
+        </article>
+
+
+
+
+
+
+
+
+
+    </body>
+    <script>
+        // Run AFTER the page fully loads
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll('.box, .box2, .box3').forEach(box => {
+            for (let i = 0; i < 69; i++) {
+                const mouse = document.createElement('div');
+                mouse.classList.add('mouse');
+                mouse.style.setProperty('--i', i);
+                box.appendChild(mouse);
+            }
+            });
+        });
+    </script>
+
+</HTML>
